@@ -35,6 +35,8 @@ ol {
   background-color: #1b1919;
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .visually-hidden {
@@ -51,8 +53,6 @@ ol {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  max-height: 534px;
-  margin: 133px 30px;
 }
 
 .result {
@@ -100,15 +100,15 @@ ol {
 .search-form__textfield {
   width: 225px;
   height: 27px;
-  /* padding: 4px; */
   border-top: #fff 1px solid;
   border-right: none;
   border-bottom: #fff 1px solid;
   border-left: none;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   background-color: #1b1919;
+  appearance: none;
 }
 
 .search-form__textfield:focus {
@@ -172,7 +172,7 @@ ol {
 .button {
   border: 1px solid #fff;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: normal;
@@ -205,7 +205,7 @@ ol {
 
 .title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -228,6 +228,7 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 298px;
   max-height: 100%;
   overflow-y: scroll;
   scrollbar-width: thin;
@@ -238,20 +239,20 @@ ol {
   margin-bottom: 30px;
 }
 
-.content__list-item:not(:last-child):active {
+.content__card-link:has(.content__list-item):active {
   background-color: #545050;
 }
 
-.content__list-item:not(:last-child):hover {
+.content__card-link:has(.content__list-item):hover {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.content__list-item:focus {
+.content__card-link:has(.content__list-item):focus {
   outline: none;
 }
 
-.content__list-item:not(:last-child):focus-visible {
+.content__card-link:has(.content__list-item):focus-visible {
   outline: 1px solid #fff;
   outline-offset: 2px;
 }
@@ -263,7 +264,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
@@ -278,7 +279,7 @@ ol {
   align-content: flex-end;
 }
 
-.content__video-card .content__video-card-description-container {
+.content__video-card-description-container {
   flex-grow: 1;
 }
 
