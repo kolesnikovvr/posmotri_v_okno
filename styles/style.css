@@ -114,7 +114,7 @@ ol {
 .search-form__label {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   gap: 5px;
   width: fit-content;
   width: 100%;
@@ -127,38 +127,12 @@ ol {
   text-underline-offset: 4px;
 }
 
-.search-form__checkbox-list:focus-visible {
-  outline: 10px solid #fff;
-  background: red;
-  outline-offset: 2px;
+.search-form__label:has(:focus) {
+  outline: none;
 }
 
-.search-form__checkbox:focus-visible {
-  outline: 10px solid #fff;
-  background: red;
-  outline-offset: 2px;
-  border: 10px solid #fff;
-}
-
-.search-form__label:focus-visible {
-  outline: 10px solid #fff;
-  border: 10px solid #fff;
-  background: red;
-  border: 10px solid #fff;
-  outline-offset: 2px;
-}
-
-.search-form__pseudo-checkbox:focus-visible {
-  border: 10px solid #fff;
-  outline: 10px solid #fff;
-  background: red;
-  outline-offset: 2px;
-}
-
-.search-form__label-text:focus-visible {
-  border: 10px solid #fff;
-  outline: 10px solid #fff;
-  background: red;
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
   outline-offset: 2px;
 }
 
