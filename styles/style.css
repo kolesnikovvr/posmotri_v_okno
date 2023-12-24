@@ -233,34 +233,35 @@ ol {
   overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+  padding: 3px;
 }
 
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.content__card-link:has(.content__list-item):active {
+.content__card-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* При прописания стилей для content__card-link у меня работает только :hover */
+
+.content__video-card:active {
   background-color: #545050;
 }
 
-.content__card-link:has(.content__list-item):hover {
+.content__video-card:hover {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.content__card-link:has(.content__list-item):focus {
+.content__video-card:focus {
   outline: none;
 }
 
-.content__card-link:has(.content__list-item):focus-visible {
+.content__video-card:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 2px;
-}
-
-.content__card-link {
-  color: #fff;
-
-  text-decoration: none;
 }
 
 .content__video-card-title {
@@ -269,7 +270,6 @@ ol {
   font-size: 30px;
   text-transform: uppercase;
 }
-
 .content__video-card-description {
   line-height: 16.2px;
 }
