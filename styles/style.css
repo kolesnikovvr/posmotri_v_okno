@@ -236,11 +236,12 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 394px;
+  width: 399px;
   height: 298px;
   max-height: 100%;
   padding: 3px;
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
 }
@@ -306,11 +307,3 @@ ol {
 .content__card-link_current {
   background-color: #545050;
 }
-
-/* .error {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 711px;
-  height: 386px;
-} */
