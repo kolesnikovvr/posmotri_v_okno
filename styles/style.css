@@ -162,20 +162,15 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 16px;
-  height: 16px;
+.search-form__checkbox:checked + span {
   background-color: #fff;
+  outline: 1px solid black;
+  outline-offset: -2px;
 }
 
 .button {
